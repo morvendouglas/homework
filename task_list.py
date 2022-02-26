@@ -1,3 +1,4 @@
+
 tasks = [
     { "description": "Wash Dishes", "completed": False, "time_taken": 10 },
     { "description": "Clean Windows", "completed": False, "time_taken": 15 },
@@ -5,7 +6,6 @@ tasks = [
     { "description": "Feed Cat", "completed": False, "time_taken": 5 },
     { "description": "Walk Dog", "completed": True, "time_taken": 60 },
 ]
-
 
 def uncompleted_tasks(list):
     uncompleted_tasks = []
@@ -16,7 +16,6 @@ def uncompleted_tasks(list):
     
 print(uncompleted_tasks(tasks))
 
-
 def completed_tasks(list):
     completed_tasks = []
     for task in list:
@@ -26,7 +25,6 @@ def completed_tasks(list):
     
 print(completed_tasks(tasks))
 
-
 def task_descriptions(list):
     describe_task = []
     for task in list:
@@ -34,9 +32,6 @@ def task_descriptions(list):
     return describe_task
     
 print(task_descriptions(tasks))
-
-# Print a list of tasks where time_taken is at least a given 
-# time
 
 def task_time(list):
     timely_tasks = []
@@ -47,9 +42,6 @@ def task_time(list):
 
 print(task_time(tasks))
 
-# Print any task with a given description
-
-
 def given_description(list, description):
     task_given = []
     for task in list:
@@ -58,16 +50,3 @@ def given_description(list, description):
     return task_given
 
 print(given_description(tasks, "Wash Dishes"))
-
-# Given a description update that task to mark it as complete.
-
-
-
-
-
-
-
-
-
-
-
